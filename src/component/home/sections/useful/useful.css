@@ -1,0 +1,50 @@
+.useful-section{
+  padding: 4rem 2rem;
+  background-color: #f3f3f3;
+}
+.useful{
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.useful p{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+}
+.useful h4{
+  padding: 0.5rem 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.useful-port{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  column-gap: 20px;
+}
+.useful-section h3{
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 31px;
+  padding: 0.5rem 0 1rem 0;
+}
+@media screen and (max-width: 767px) {
+  .useful{
+    flex-direction: column;
+  }
+  .useful-section{
+    padding: 4rem 1rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .useful-section{
+    padding: 4rem 2rem
+  }
+}
+@media screen and (min-width: 993px) {
+  .useful-section{
+    padding: 4rem;
+  }
+}

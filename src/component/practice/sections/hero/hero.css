@@ -1,0 +1,38 @@
+.practice-hero{
+  padding: 20vh 2rem;
+}
+.practice-hero h1{
+  font-size: 40px;
+  line-height: 36px;
+  font-weight: 500;
+  padding-top: 1rem;
+  color: white;
+}
+.practice-hero p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0.5rem 0;
+  color: #f3f3f3;
+}
+.practice-hero{
+  background: rgb(146, 166, 225);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 767px) {
+  .practice-hero{
+    padding: 20vh 1rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .practice-hero{
+    padding: 20vh 2rem;
+  }
+} 
+@media screen and (min-width: 993px) {
+  .practice-hero{
+    padding: 20vh 4rem;
+  }
+}

@@ -1,0 +1,57 @@
+.course-hold-section{
+  padding: 4rem 2rem;
+}
+.course-hold-nav{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  overflow-x: scroll;
+  padding: 0.5rem 0;
+}
+.course-hold-nav::after{
+  content: "";
+  height: 100%;
+  width: 1rem;
+  background: linear-gradient(to right, #eaeaea, #ffff);
+}
+.course-hold-nav p{
+  padding: 4px 12px;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.course-hold-nav p.active{
+  background: rgb(146, 166, 225);
+  color: white;
+  font-weight: 400;
+}
+.course-hold-body{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+@media screen and (max-width: 767px) {
+  .course-hold-section{
+    padding: 4rem 1rem
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .course-hold-section {
+    padding: 4rem 2rem
+  }
+}
+@media screen and (min-width: 993px) {
+  .course-hold-section {
+    padding: 4rem 4rem
+  }
+  .course-hold-body{
+    justify-content: flex-start;
+  }
+}

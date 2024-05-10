@@ -1,0 +1,39 @@
+.featured-courses{
+  padding: 4rem 2rem;
+}
+.featured-card-containers{
+  border-radius: 5px;
+  padding: 8px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+.featured-header h3{
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 31px;
+  padding: 0.5rem 0 1rem 0;
+}
+@media screen and (max-width: 767px) {
+  .featured-courses{
+    padding: 4rem 1rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .featured-courses{
+    padding: 4rem 2rem;
+  }
+  .featured-card-containers{
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 993px) {
+  .featured-courses{
+    padding: 4rem;
+  }
+  .featured-card-containers{
+    align-items: flex-start;
+  }
+}

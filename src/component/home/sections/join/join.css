@@ -1,0 +1,58 @@
+.join-section{
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+}
+.join-section h3{
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 31px;
+  padding: 0.5rem 0 1rem 0;
+}
+.join-section p{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 0.5rem 0;
+}
+.input-box{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 70%;
+  gap: 10px;
+}
+.input-box input{
+  flex: 2;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(146, 166, 225);
+  caret-color: rgb(146, 166, 225);
+  padding: 8px 12px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  transition: all 0.3 ease;
+}
+.input-box button{
+  flex: 1;
+}
+@media screen and (max-width: 767px) {
+  .join-section{
+    padding: 4rem 1rem;
+  }
+  .input-box{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .join-section{
+    padding: 4rem 2rem;
+  }
+}
+@media screen and (min-width: 993px) {
+  .join-section{
+    padding: 4rem 4rem;
+  }
+}

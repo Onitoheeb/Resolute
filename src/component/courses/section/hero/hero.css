@@ -1,0 +1,15 @@
+.course-hero{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0) );
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20vh 2rem;
+}
+.course-hero h1{
+  font-size: 40px;
+  line-height: 36px;
+  font-weight: 500;
+  padding-top: 1rem;
+  color: white;
+  text-align: center;
+}

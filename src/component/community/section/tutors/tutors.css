@@ -1,0 +1,60 @@
+.tutors-secton{
+  padding: 4rem 2rem;
+  background-color: #f3f3f3;
+}
+.tutors-body{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow-x: scroll;
+  padding: 1rem 0;
+}
+.tutors-child{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-width: fit-content;
+}
+.tutors-header h3{
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 31px;
+  padding: 0 0 0.5rem 0;
+}
+.tutor-img{
+  height: 300px;
+  width: 300px;
+  border-radius: 300px;
+  border: 2px solid rgb(146, 166, 225);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  mix-blend-mode: multiply;
+}
+.tutors-child p{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+@media screen and (max-width: 767px) {
+  .tutor-img{
+    height: 225px;
+    width: 225px;
+  }
+  .tutors-secton{
+    padding: 4rem 1rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) { 
+  .tutors-secton{
+    padding: 4rem 2rem
+  }  
+}
+@media screen and (min-width: 993px) { 
+  .tutors-secton{
+    padding: 4rem;
+  }  
+}

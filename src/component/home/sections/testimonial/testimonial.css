@@ -1,0 +1,110 @@
+.testimonial{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  overflow-x: scroll;
+  gap: 20px;
+}
+.testimonial-card{
+  width: 50%;
+  position: relative;
+  border: 1px solid #f3f3f3;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #eaeaea;
+  height: 460px !important;
+  margin: 3rem 0;
+  object-fit: contain;
+}
+.testimonial-card:nth-child(5){
+  padding-right: 1rem;
+}
+.testimonial-head{
+  height: 10rem;
+  background: rgb(146, 166, 225);
+  border-radius: 10px 10px 0 0;
+}
+.testimonial-img{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid  rgb(146, 166, 225);
+  transform: translate(-50%, -30%);
+}
+.testimonial-body{
+  padding: 4rem 0.5rem;
+  text-align: center;
+}
+.testimonial-body h4{
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 0.5rem 0;
+}
+.testimonial-section h3{
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 31px;
+  padding: 0.5rem 2rem 1rem 0;
+  text-align: center
+}
+.testimonial-body p{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.rating{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rating .bx{
+  color: gold;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0.5rem 0;
+}
+@media screen and (max-width: 767px) {
+  .testimonial-card{
+    min-width: calc(90% - 1rem);
+    margin: 1rem 0;
+  }
+  .testimonial-section{
+    padding: 4rem 0 4rem 1rem;
+  }
+  .testimonial-section h3{
+    padding: 0.5rem 1rem 1rem 0;
+  }
+  .testimonial-card{
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .testimonial-card {
+    min-width: 45%;
+    margin: 3rem 0;
+  }
+  .testimonial-section{
+    padding: 4rem 0 4rem 2rem;
+  }
+  .testimonial-section h3{
+    padding: 0.5rem 2rem 1rem 0;
+  }
+}
+@media screen and (min-width: 993px) {
+  .testimonial-card {
+    min-width: 30%;
+    margin: 4rem 0;
+  }
+  .testimonial-section{
+    padding: 4rem 0 4rem 4rem;
+  }
+  .testimonial-section h3{
+    padding: 0.5rem 4rem 1rem 0;
+  }
+}
