@@ -7,7 +7,7 @@ import {Courses} from './component/courses/Courses.jsx';
 import {Community} from './component/community/Community.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/dist/index.html" element={<BodyElement />} >
+    <Route path="/" element={<BodyElement />} >
       <Route index element={<Home />} errorElement={<Home />} />
       <Route path="practice" element={<Practice />} errorElement={<Home />}/>
       <Route path="courses" element={<Courses />} errorElement={<Home />}/>
