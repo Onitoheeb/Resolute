@@ -6,7 +6,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://Onitoheeb.github.io/Resolute",
+  "homepage": "https://Onitoheeb.github.io/dist",
   "scripts": {
     "clean": "rm -rf dist",
     "install-dep": "npm install --no-bin-links",
