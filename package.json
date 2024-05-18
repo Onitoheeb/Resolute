@@ -6,12 +6,15 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://Onitoheeb.github.io/Resolute",
   "scripts": {
     "clean": "rm -rf dist",
     "install-dep": "npm install --no-bin-links",
     "build": "webpack --mode development",
     "build-prod": "webpack --mode production",
-    "start": "webpack serve --hot --mode development"
+    "start": "webpack serve --hot --mode development",
+    "predeploy": "npm run build-prod",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -26,6 +29,7 @@
     "css-loader": "^7.1.1",
     "style-loader": "^4.0.0",
     "webpack": "5.88.2",
-    "webpack-cli": "5.1.4"
+    "webpack-cli": "5.1.4",
+    "gh-pages": "^6.0.0"
   }
 }

@@ -1,15 +1,16 @@
-// webpack.config.js
 const path = require('path');
 
+const isProduction = process.env.NODE_ENV === 'production';
+
 const config = {
-  mode: 'development',
+  mode: isProduction ? 'production' : 'development',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/'
+    publicPath: '/'  // You can adjust this if your repository is not at the root of your GitHub Pages site.
   },
-  devtool: 'inline-source-map',
+  devtool: isProduction ? 'source-map' : 'inline-source-map',
   module: {
     rules: [
       {
